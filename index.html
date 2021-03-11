@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LogIn - signIn</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/18fc5b7198.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" type="image/ico" href="./favicon.ico">
+</head>
+<body>
+	
+	<section>
+	<div class="container">
+		<div class="user signinBox">
+			<div class="imgBx"><img src="1.jpg" alt=""></div>
+			<div class="formBx">
+				<form action="">
+					<h2>sign in</h2>
+					<input type="text" placeholder="username">
+					<input type="Password" placeholder="password">
+					<input type="Submit" value="login">
+					<p class="signup">dont have an account <a href="#" onclick="toggleForm()"> Sign up</a> </p>
+				</form>
+			</div>
+		</div>
+
+		<div class="user signUpBox">
+			
+			<div class="formBx">
+				<form action="">
+					<h2>create account</h2>
+					<input type="text" placeholder="username">
+					<input type="email" placeholder="email">
+					<input type="Password" placeholder="create password">
+					<input type="Password" placeholder="confirm password">
+					<input type="Submit" value="Sign up">
+					<p class="signup">Already have an account <a href="#" onclick="toggleForm()"> Sign In</a> </p>
+				</form>
+			</div>
+			<div class="imgBx"><img src="2.jpg" alt=""></div>
+		</div>
+		
+	</div>
+
+</section>
+
+
+
+
+
+
+
+	<script>
+		function toggleForm() {
+			section=document.querySelector('section');
+			container=document.querySelector('.container');
+			container.classList.toggle('active');
+			section.classList.toggle('active');
+		}
+
+	</script>
+</body>
+</html>
